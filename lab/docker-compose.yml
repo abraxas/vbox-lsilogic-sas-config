@@ -1,0 +1,12 @@
+name: vbox-lsilogic-sas-config
+
+services:
+  gadget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    restart: "no"
+    network_mode: none
+    labels:
+      lab: vbox-lsilogic-sas-config
